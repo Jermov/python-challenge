@@ -1,4 +1,6 @@
-# python-challenge
+#PyBank and PyPoll challenge instructions:
+
+# PyPoll Challenge
 
 In this challenge, you are tasked with helping a small, rural town modernize its vote counting process.
 
