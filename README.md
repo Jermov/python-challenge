@@ -1,4 +1,4 @@
-#PyBank and PyPoll challenge instructions:
+PyBank and PyPoll challenge instructions:
 
 # PyPoll Challenge
 
