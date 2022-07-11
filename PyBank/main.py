@@ -30,7 +30,7 @@ lowest_row = 0
 highest_row = 0
 # STEP THROUGH ROWS
 ##as long as the stepper count is less than the last row count do the following loop
-  # READ NEXT profit/loss CELL
+ # READ NEXT profit/loss CELL
  # STORE DIFFERENCE AS VARIABLE to compare through the loop
  # ADD DIFFERENCE TO THE RUNNING 'DIFF' TOTAL
   ##checks if the variable set to lowest_row (greatest decrease) was found within profit/losses, to print the row (date and profit/loss) of that rownum
@@ -56,7 +56,7 @@ avg=round(total_running_difference/stepper,2)
 # Therefore, total_running_difference / stepper should be the average
 #-------------------------------------
 #-------------------------------------
-##attempted to add spaces for readability
+
 ##last instruction was to write print statements both in terminal and as a file- used stdout and saved as txt file
 f = open('c:\\Users\\jess\\Documents\\python-challenge\\PyBank\\analysis\\analysis.txt','w')
 output_string = "Financial Analysis\n"
