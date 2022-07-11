@@ -5,24 +5,22 @@ import pandas as pd
 import os,sys
 import numpy as np
 
-###Bring in resources csv (election_data.csv)--issues here
-###path=github (for graders to leverage)- causes errors works using pandas. Not gone over in class.
-##using raw, copy/paste of link to data without the 'raw' selection results in errors
-###Works!
+###Bring in resources csv (election_data.csv)
+
 df=pd.read_csv("C:/Users/jess/Documents/python-challenge/PyPoll/Resources/election_data.csv")
+
 ###find the total number of votes cast
 item_count=df.shape[0]
-##print out results formatted the way displayed in readme file
 
 #create variables to store the count of all each candidate's votes
 charles_count=np.sum(df['Candidate']=='Charles Casper Stockham')
 diana_count=np.sum(df['Candidate']=='Diana DeGette')
 raymon_count=np.sum(df['Candidate']=='Raymon Anthony Doane')
+
 #create variables to store percentage of the vote each candidate received
 charles_pct=round((charles_count/item_count*100),3)
 diana_pct=round((diana_count/item_count*100),3)
 raymon_pct=round((raymon_count/item_count*100),3)
-#print out the results of count and percent for each candidate and formatted to match 'ish' the readme file
 
 #Determining winner- if statement to determine which candidate had the most votes and formatting to match 'ish' the readme file
 if diana_pct > raymon_pct and diana_pct>charles_pct:
